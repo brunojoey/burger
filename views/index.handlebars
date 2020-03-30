@@ -1,0 +1,36 @@
+<img class="img" src="../assets/img/burger.png" alt="burger" width=300px height=300px>
+
+<h1>Burger Place!</h1>
+
+<h2>Come eat some burgers!</h2>
+
+<form class="addBurger">
+    <label for="burger-name">Add a burger:</label>
+    <input type="text" id="burger-name">
+    <button class="add" type="submit">Enter</button>
+</form>
+
+<div id="container">
+    <h2 id="devour">Will Be Devoured</h2>
+    <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <p class="to-devour">
+            {{burger_name}}
+            <button class="devour" data-id="{{id}}">EAT THAT BURGER</button>
+        </p>
+        {{/unless}}
+        {{/each}}
+    </ul>
+
+    <h2 id="devoured">Have Been Devoured</h2>
+    <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        <p class="devoured">
+            {{burger_name}}
+        </p>
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>

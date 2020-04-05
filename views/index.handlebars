@@ -17,12 +17,13 @@
         {{#unless devoured}}
         <p class="to-devour">
             {{burger_name}}
-            <button class="devour" data-id="{{id}}">EAT THAT BURGER</button>
+            <button class="devour" data-id="{{id}}">EAT THAT BURGER!</button>
         </p>
         {{/unless}}
         {{/each}}
     </ul>
-
+</div>
+<div id="container">
     <h2 id="devoured">Have Been Devoured</h2>
     <ul>
         {{#each burgers}}
@@ -30,6 +31,7 @@
         <p class="devoured">
             {{burger_name}}
         </p>
+        <button class="delete-burger" data-id="{{id}}" data-devoured="{{devoured}}">Throw away that burger!</button>
         {{/if}}
         {{/each}}
     </ul>

@@ -7,6 +7,7 @@
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Deployment Application Link](#deployment-application-link)
+* [Application in Use](#application-in-use)
 
 ## Author(s)
 Joey Bruno
